@@ -1,0 +1,246 @@
+20:26:40.910 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:26:43.503 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:26:44.987 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://swapi.dev/api/people/1/
+1 > Host: swapi.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:26:46.725 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1723
+1 < 200
+1 < Server: nginx/1.16.1
+1 < Date: Mon, 16 May 2022 23:26:45 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+1 < ETag: "ee398610435c328f4d0a4e1b0d2f7bbc"
+1 < Allow: GET, HEAD, OPTIONS
+1 < Strict-Transport-Security: max-age=15768000
+{"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://swapi.dev/api/planets/1/","films":["https://swapi.dev/api/films/1/","https://swapi.dev/api/films/2/","https://swapi.dev/api/films/3/","https://swapi.dev/api/films/6/"],"species":[],"vehicles":["https://swapi.dev/api/vehicles/14/","https://swapi.dev/api/vehicles/30/"],"starships":["https://swapi.dev/api/starships/12/","https://swapi.dev/api/starships/22/"],"created":"2014-12-09T13:50:51.644000Z","edited":"2014-12-20T21:17:56.891000Z","url":"https://swapi.dev/api/people/1/"}
+20:26:48.522 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:starwars/starwars.feature
+20:39:01.724 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:39:01.739 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1652744341739
+20:39:03.601 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:39:04.601 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://swapi.dev/api/people/123/
+1 > Host: swapi.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:39:07.679 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3063
+1 < 404
+1 < Server: nginx/1.16.1
+1 < Date: Mon, 16 May 2022 23:39:06 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+1 < ETag: "8bee5c3ad44d6c57f19e49e8e76ee09e"
+1 < Allow: GET, HEAD, OPTIONS
+{"detail":"Not found"}
+20:39:08.740 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:starwars/starwars.feature
+20:43:27.891 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:43:27.907 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1652744607907
+20:43:29.813 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:43:30.797 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://swapi.dev/api/people/1/
+1 > Host: swapi.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:43:35.905 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 5093
+1 < 200
+1 < Server: nginx/1.16.1
+1 < Date: Mon, 16 May 2022 23:43:34 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+1 < ETag: "ee398610435c328f4d0a4e1b0d2f7bbc"
+1 < Allow: GET, HEAD, OPTIONS
+1 < Strict-Transport-Security: max-age=15768000
+{"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://swapi.dev/api/planets/1/","films":["https://swapi.dev/api/films/1/","https://swapi.dev/api/films/2/","https://swapi.dev/api/films/3/","https://swapi.dev/api/films/6/"],"species":[],"vehicles":["https://swapi.dev/api/vehicles/14/","https://swapi.dev/api/vehicles/30/"],"starships":["https://swapi.dev/api/starships/12/","https://swapi.dev/api/starships/22/"],"created":"2014-12-09T13:50:51.644000Z","edited":"2014-12-20T21:17:56.891000Z","url":"https://swapi.dev/api/people/1/"}
+20:43:35.967 [pool-1-thread-1] ERROR com.intuit.karate - classpath:starwars/starwars.feature:19
+And match response.name = "Luke Skywalker"
+syntax error, expected '==' for match
+classpath:starwars/starwars.feature:19
+20:43:36.998 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:starwars/starwars.feature
+20:45:16.128 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:45:16.144 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1652744716128
+20:45:18.154 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:45:19.217 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://swapi.dev/api/people/1/
+1 > Host: swapi.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:45:22.122 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 2905
+1 < 200
+1 < Server: nginx/1.16.1
+1 < Date: Mon, 16 May 2022 23:45:20 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+1 < ETag: "ee398610435c328f4d0a4e1b0d2f7bbc"
+1 < Allow: GET, HEAD, OPTIONS
+1 < Strict-Transport-Security: max-age=15768000
+{"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://swapi.dev/api/planets/1/","films":["https://swapi.dev/api/films/1/","https://swapi.dev/api/films/2/","https://swapi.dev/api/films/3/","https://swapi.dev/api/films/6/"],"species":[],"vehicles":["https://swapi.dev/api/vehicles/14/","https://swapi.dev/api/vehicles/30/"],"starships":["https://swapi.dev/api/starships/12/","https://swapi.dev/api/starships/22/"],"created":"2014-12-09T13:50:51.644000Z","edited":"2014-12-20T21:17:56.891000Z","url":"https://swapi.dev/api/people/1/"}
+20:45:23.263 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:starwars/starwars.feature
+20:46:04.141 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:46:04.157 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1652744764157
+20:46:06.131 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+20:46:06.131 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:46:06.131 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+20:46:07.178 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://swapi.dev/api/people/1/
+1 > Host: swapi.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:46:07.178 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://swapi.dev/api/people/1/
+1 > Host: swapi.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:46:07.178 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://swapi.dev/api/people/123/
+1 > Host: swapi.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:46:10.149 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2955
+1 < 404
+1 < Server: nginx/1.16.1
+1 < Date: Mon, 16 May 2022 23:46:08 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+1 < ETag: "8bee5c3ad44d6c57f19e49e8e76ee09e"
+1 < Allow: GET, HEAD, OPTIONS
+{"detail":"Not found"}
+20:46:10.508 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3330
+1 < 200
+1 < Server: nginx/1.16.1
+1 < Date: Mon, 16 May 2022 23:46:08 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+1 < ETag: "ee398610435c328f4d0a4e1b0d2f7bbc"
+1 < Allow: GET, HEAD, OPTIONS
+1 < Strict-Transport-Security: max-age=15768000
+{"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://swapi.dev/api/planets/1/","films":["https://swapi.dev/api/films/1/","https://swapi.dev/api/films/2/","https://swapi.dev/api/films/3/","https://swapi.dev/api/films/6/"],"species":[],"vehicles":["https://swapi.dev/api/vehicles/14/","https://swapi.dev/api/vehicles/30/"],"starships":["https://swapi.dev/api/starships/12/","https://swapi.dev/api/starships/22/"],"created":"2014-12-09T13:50:51.644000Z","edited":"2014-12-20T21:17:56.891000Z","url":"https://swapi.dev/api/people/1/"}
+20:46:11.289 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 4111
+1 < 200
+1 < Server: nginx/1.16.1
+1 < Date: Mon, 16 May 2022 23:46:09 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+1 < ETag: "ee398610435c328f4d0a4e1b0d2f7bbc"
+1 < Allow: GET, HEAD, OPTIONS
+1 < Strict-Transport-Security: max-age=15768000
+{"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://swapi.dev/api/planets/1/","films":["https://swapi.dev/api/films/1/","https://swapi.dev/api/films/2/","https://swapi.dev/api/films/3/","https://swapi.dev/api/films/6/"],"species":[],"vehicles":["https://swapi.dev/api/vehicles/14/","https://swapi.dev/api/vehicles/30/"],"starships":["https://swapi.dev/api/starships/12/","https://swapi.dev/api/starships/22/"],"created":"2014-12-09T13:50:51.644000Z","edited":"2014-12-20T21:17:56.891000Z","url":"https://swapi.dev/api/people/1/"}
+20:46:12.445 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:starwars/starwars.feature
+20:49:33.039 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:49:33.054 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1652744973039
+20:49:35.146 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+20:49:35.146 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+20:49:35.146 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:49:36.194 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://swapi.dev/api/people/1/
+1 > Host: swapi.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:49:36.194 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://swapi.dev/api/people/1/
+1 > Host: swapi.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:49:36.194 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://swapi.dev/api/people/123/
+1 > Host: swapi.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:49:38.544 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2350
+1 < 404
+1 < Server: nginx/1.16.1
+1 < Date: Mon, 16 May 2022 23:49:36 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+1 < ETag: "8bee5c3ad44d6c57f19e49e8e76ee09e"
+1 < Allow: GET, HEAD, OPTIONS
+{"detail":"Not found"}
+20:49:42.122 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 5928
+1 < 200
+1 < Server: nginx/1.16.1
+1 < Date: Mon, 16 May 2022 23:49:40 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+1 < ETag: "ee398610435c328f4d0a4e1b0d2f7bbc"
+1 < Allow: GET, HEAD, OPTIONS
+1 < Strict-Transport-Security: max-age=15768000
+{"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://swapi.dev/api/planets/1/","films":["https://swapi.dev/api/films/1/","https://swapi.dev/api/films/2/","https://swapi.dev/api/films/3/","https://swapi.dev/api/films/6/"],"species":[],"vehicles":["https://swapi.dev/api/vehicles/14/","https://swapi.dev/api/vehicles/30/"],"starships":["https://swapi.dev/api/starships/12/","https://swapi.dev/api/starships/22/"],"created":"2014-12-09T13:50:51.644000Z","edited":"2014-12-20T21:17:56.891000Z","url":"https://swapi.dev/api/people/1/"}
+20:49:42.122 [pool-1-thread-3] ERROR com.intuit.karate - classpath:starwars/starwars.feature:18
+And match response.name == "Luke Skywal"
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Luke Skywalker'
+  'Luke Skywal'
+
+classpath:starwars/starwars.feature:18
+20:49:42.465 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 6271
+1 < 200
+1 < Server: nginx/1.16.1
+1 < Date: Mon, 16 May 2022 23:49:40 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept, Cookie
+1 < X-Frame-Options: SAMEORIGIN
+1 < ETag: "ee398610435c328f4d0a4e1b0d2f7bbc"
+1 < Allow: GET, HEAD, OPTIONS
+1 < Strict-Transport-Security: max-age=15768000
+{"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male","homeworld":"https://swapi.dev/api/planets/1/","films":["https://swapi.dev/api/films/1/","https://swapi.dev/api/films/2/","https://swapi.dev/api/films/3/","https://swapi.dev/api/films/6/"],"species":[],"vehicles":["https://swapi.dev/api/vehicles/14/","https://swapi.dev/api/vehicles/30/"],"starships":["https://swapi.dev/api/starships/12/","https://swapi.dev/api/starships/22/"],"created":"2014-12-09T13:50:51.644000Z","edited":"2014-12-20T21:17:56.891000Z","url":"https://swapi.dev/api/people/1/"}
+20:49:43.637 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:starwars/starwars.feature
