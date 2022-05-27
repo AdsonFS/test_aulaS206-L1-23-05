@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.starwars.starwars</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-05-23 06:36:08 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[5:32]"><span>[5:32]</span> <span>Verificar o retorno com sucesso da API com dados válidos da requisição e verificar se o filme está apontando para o item correto</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/starwars/starwars.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Executar testes na API do Star Wars.</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:32]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:32]</span>
+                <span class="scenario-name">Verificar o retorno com sucesso da API com dados válidos da requisição e verificar se o filme está apontando para o item correto</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2181</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:32]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_api = &quot;https://swapi.dev/api/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">18:36:06.710 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_api + &#39;planets/5&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1223</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">18:36:06.947 request:
+1 &gt; GET https://swapi.dev/api/planets/5
+1 &gt; Host: swapi.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:36:07.939 response time in milliseconds: 990
+1 &lt; 200
+1 &lt; Server: nginx/1.16.1
+1 &lt; Date: Mon, 23 May 2022 21:36:10 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Accept, Cookie
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; ETag: &quot;4668b2f104feddb4d66f56b17e9d5fb1&quot;
+1 &lt; Allow: GET, HEAD, OPTIONS
+1 &lt; Strict-Transport-Security: max-age=15768000
+{&quot;name&quot;:&quot;Dagobah&quot;,&quot;rotation_period&quot;:&quot;23&quot;,&quot;orbital_period&quot;:&quot;341&quot;,&quot;diameter&quot;:&quot;8900&quot;,&quot;climate&quot;:&quot;murky&quot;,&quot;gravity&quot;:&quot;N/A&quot;,&quot;terrain&quot;:&quot;swamp, jungles&quot;,&quot;surface_water&quot;:&quot;8&quot;,&quot;population&quot;:&quot;unknown&quot;,&quot;residents&quot;:[],&quot;films&quot;:[&quot;https://swapi.dev/api/films/2/&quot;,&quot;https://swapi.dev/api/films/3/&quot;,&quot;https://swapi.dev/api/films/6/&quot;],&quot;created&quot;:&quot;2014-12-10T11:42:22.590000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T20:58:18.425000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/planets/5/&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.name == &quot;Dagobah&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.films[1] == &quot;https://swapi.dev/api/films/3/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def film = response.films[1]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print film</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.39">18:36:07.974 [print] https://swapi.dev/api/films/3/ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>url film</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">934</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.41">18:36:07.975 request:
+2 &gt; GET https://swapi.dev/api/films/3/
+2 &gt; Host: swapi.dev
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+18:36:08.907 response time in milliseconds: 932
+2 &lt; 200
+2 &lt; Server: nginx/1.16.1
+2 &lt; Date: Mon, 23 May 2022 21:36:11 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Accept, Cookie
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; ETag: &quot;d24de9ccc835db2d65d39428fccdb7b2&quot;
+2 &lt; Allow: GET, HEAD, OPTIONS
+2 &lt; Strict-Transport-Security: max-age=15768000
+{&quot;title&quot;:&quot;Return of the Jedi&quot;,&quot;episode_id&quot;:6,&quot;opening_crawl&quot;:&quot;Luke Skywalker has returned to\r\nhis home planet of Tatooine in\r\nan attempt to rescue his\r\nfriend Han Solo from the\r\nclutches of the vile gangster\r\nJabba the Hutt.\r\n\r\nLittle does Luke know that the\r\nGALACTIC EMPIRE has secretly\r\nbegun construction on a new\r\narmored space station even\r\nmore powerful than the first\r\ndreaded Death Star.\r\n\r\nWhen completed, this ultimate\r\nweapon will spell certain doom\r\nfor the small band of rebels\r\nstruggling to restore freedom\r\nto the galaxy...&quot;,&quot;director&quot;:&quot;Richard Marquand&quot;,&quot;producer&quot;:&quot;Howard G. Kazanjian, George Lucas, Rick McCallum&quot;,&quot;release_date&quot;:&quot;1983-05-25&quot;,&quot;characters&quot;:[&quot;https://swapi.dev/api/people/1/&quot;,&quot;https://swapi.dev/api/people/2/&quot;,&quot;https://swapi.dev/api/people/3/&quot;,&quot;https://swapi.dev/api/people/4/&quot;,&quot;https://swapi.dev/api/people/5/&quot;,&quot;https://swapi.dev/api/people/10/&quot;,&quot;https://swapi.dev/api/people/13/&quot;,&quot;https://swapi.dev/api/people/14/&quot;,&quot;https://swapi.dev/api/people/16/&quot;,&quot;https://swapi.dev/api/people/18/&quot;,&quot;https://swapi.dev/api/people/20/&quot;,&quot;https://swapi.dev/api/people/21/&quot;,&quot;https://swapi.dev/api/people/22/&quot;,&quot;https://swapi.dev/api/people/25/&quot;,&quot;https://swapi.dev/api/people/27/&quot;,&quot;https://swapi.dev/api/people/28/&quot;,&quot;https://swapi.dev/api/people/29/&quot;,&quot;https://swapi.dev/api/people/30/&quot;,&quot;https://swapi.dev/api/people/31/&quot;,&quot;https://swapi.dev/api/people/45/&quot;],&quot;planets&quot;:[&quot;https://swapi.dev/api/planets/1/&quot;,&quot;https://swapi.dev/api/planets/5/&quot;,&quot;https://swapi.dev/api/planets/7/&quot;,&quot;https://swapi.dev/api/planets/8/&quot;,&quot;https://swapi.dev/api/planets/9/&quot;],&quot;starships&quot;:[&quot;https://swapi.dev/api/starships/2/&quot;,&quot;https://swapi.dev/api/starships/3/&quot;,&quot;https://swapi.dev/api/starships/10/&quot;,&quot;https://swapi.dev/api/starships/11/&quot;,&quot;https://swapi.dev/api/starships/12/&quot;,&quot;https://swapi.dev/api/starships/15/&quot;,&quot;https://swapi.dev/api/starships/17/&quot;,&quot;https://swapi.dev/api/starships/22/&quot;,&quot;https://swapi.dev/api/starships/23/&quot;,&quot;https://swapi.dev/api/starships/27/&quot;,&quot;https://swapi.dev/api/starships/28/&quot;,&quot;https://swapi.dev/api/starships/29/&quot;],&quot;vehicles&quot;:[&quot;https://swapi.dev/api/vehicles/8/&quot;,&quot;https://swapi.dev/api/vehicles/16/&quot;,&quot;https://swapi.dev/api/vehicles/18/&quot;,&quot;https://swapi.dev/api/vehicles/19/&quot;,&quot;https://swapi.dev/api/vehicles/24/&quot;,&quot;https://swapi.dev/api/vehicles/25/&quot;,&quot;https://swapi.dev/api/vehicles/26/&quot;,&quot;https://swapi.dev/api/vehicles/30/&quot;],&quot;species&quot;:[&quot;https://swapi.dev/api/species/1/&quot;,&quot;https://swapi.dev/api/species/2/&quot;,&quot;https://swapi.dev/api/species/3/&quot;,&quot;https://swapi.dev/api/species/5/&quot;,&quot;https://swapi.dev/api/species/6/&quot;,&quot;https://swapi.dev/api/species/8/&quot;,&quot;https://swapi.dev/api/species/9/&quot;,&quot;https://swapi.dev/api/species/10/&quot;,&quot;https://swapi.dev/api/species/15/&quot;],&quot;created&quot;:&quot;2014-12-18T10:39:33.255000Z&quot;,&quot;edited&quot;:&quot;2014-12-20T09:48:37.462000Z&quot;,&quot;url&quot;:&quot;https://swapi.dev/api/films/3/&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.title == &quot;Return of the Jedi&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

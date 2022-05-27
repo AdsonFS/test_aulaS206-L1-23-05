@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.starwars.starwars</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-05-23 06:47:06 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[6:45]"><span>[6:45]</span> <span>Testando post</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/starwars/starwars.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Executar testes na API do Star Wars.</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:45]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:45]</span>
+                <span class="scenario-name">Testando post</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1050</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:45]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:45]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_api = &quot;https://swapi.dev/api/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">18:47:05.840 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://idrugs-app.herokuapp.com/idrugs-app/pharma/user&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;name&quot;: &quot;Lucas&quot;,&quot;email&quot;: &quot;l@gmail.com&quot;,&quot;last_name&quot;: &quot;Alípio&quot;,&quot;office&quot;: &quot;Devs/PO&quot;,&quot;photo_link&quot;: &quot;https://avatars.githubusercontent.com/u/90158681?v=4&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1024</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.48">18:47:06.137 request:
+1 &gt; POST https://idrugs-app.herokuapp.com/idrugs-app/pharma/user
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 152
+1 &gt; Host: idrugs-app.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Lucas&quot;,&quot;email&quot;:&quot;l@gmail.com&quot;,&quot;last_name&quot;:&quot;Alípio&quot;,&quot;office&quot;:&quot;Devs\/PO&quot;,&quot;photo_link&quot;:&quot;https:\/\/avatars.githubusercontent.com\/u\/90158681?v=4&quot;}
+
+18:47:06.907 response time in milliseconds: 769
+1 &lt; 400
+1 &lt; Connection: close
+1 &lt; Content-Type: application/json
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Server: Werkzeug/2.0.3 Python/3.10.4
+1 &lt; Date: Mon, 23 May 2022 21:47:09 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;message&quot;: &quot;J\u00e1 existe um usu\u00e1rio cadastrado com esse email.&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref failed">49</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">18:47:06.909 src/test/java/starwars/starwars.feature:49
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 769, url: https://idrugs-app.herokuapp.com/idrugs-app/pharma/user, response: 
+{&quot;message&quot;: &quot;J\u00e1 existe um usu\u00e1rio cadastrado com esse email.&quot;}
+src/test/java/starwars/starwars.feature:49
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
