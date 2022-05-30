@@ -60,3 +60,10 @@ Feature: Executar testes na API do Star Wars.
         When method POST
         Then status 201
 
+    Scenario: Teste para Tarefa-Teams
+        Given url url_api + 'species/4'
+        When method get
+        Then status 200
+        And match response.classification == "sentient"
+        And match response.people[0] == "https://swapi.dev/api/people/15/"
+    
